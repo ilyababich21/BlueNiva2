@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/machineFragment">
+    <fragment
+        android:id="@+id/machineFragment"
+        android:name="com.example.blueniva2.view.MachineFragment"
+        android:label="fragment_machine"
+        tools:layout="@layout/fragment_machine" >
+        <action
+            android:id="@+id/action_machineFragment_to_mashineInfoFragment"
+            app:destination="@id/mashineInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mashineInfoFragment"
+        android:name="com.example.blueniva2.view.MashineInfoFragment"
+        android:label="fragment_mashine_info"
+        tools:layout="@layout/fragment_mashine_info" >
+        <argument
+            android:name="machineData"
+            app:argType="com.example.blueniva2.model.Machine" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceListFragment2"
+        android:name="com.example.bt_def.DeviceListFragment"
+        android:label="DeviceListFragment" />
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.blueniva2.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+</navigation>

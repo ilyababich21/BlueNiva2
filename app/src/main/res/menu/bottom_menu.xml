@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/machineFragment"
+        android:icon="@drawable/home_page"
+        android:orderInCategory="1"
+        android:title="Home" />
+    <item
+        android:id="@+id/deviceListFragment2"
+        android:icon="@drawable/connect"
+        android:orderInCategory="2"
+        android:title="Connection" />
+    <item
+        android:id="@+id/mainFragment2"
+        android:icon="@drawable/arcchive"
+        android:title="Archive"
+        android:orderInCategory="3"
+        />
+</menu>
