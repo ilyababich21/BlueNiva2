@@ -29,6 +29,7 @@ class ConnectThread(device: BluetoothDevice) : Thread() {
     override fun run() {
        try{
            mSocket?.connect()
+
            Log.d("MyLog","good")
            mSocket?.let { connectedTread.setSocket(it) }
            if(mSocket!=null)connectedTread.start()
